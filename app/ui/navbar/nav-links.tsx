@@ -1,31 +1,28 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { IoPersonCircleOutline } from "react-icons/io5";
-import { MdOutlineCollectionsBookmark } from "react-icons/md";
-import { RiCodeView } from "react-icons/ri";
-import { GoBriefcase } from "react-icons/go";
+import Image from "next/image";
 
 const links = [
   {
     name: "About",
     href: "/",
-    icon: IoPersonCircleOutline,
+    icon: "face",
   },
   {
     name: "Formacion",
     href: "/studies",
-    icon: MdOutlineCollectionsBookmark,
+    icon: "book",
   },
   {
     name: "Experiencia Dev",
     href: "/dev-jobs",
-    icon: RiCodeView,
+    icon: "code",
   },
   {
     name: "Otros trabajos",
     href: "/other-jobs",
-    icon: GoBriefcase,
+    icon: "work",
   },
 ];
 
@@ -35,7 +32,6 @@ export default function NavLinks() {
   return (
     <>
       {links.map((link) => {
-        const LinkIcon = link.icon;
         return (
           <Link
             key={link.name}
@@ -43,6 +39,13 @@ export default function NavLinks() {
             className={`text-base flex items-center gap-2 font-medium hover:bg-sky-100 hover:text-blue-600 md:flex-none md:justify-start
                 ${pathname === link.href ? "bg-sky-100 text-blue-600" : ""}`}
           >
+            <Image
+              src={`/icons/${link.icon}.svg`}
+              alt={link.name}
+              width={20}
+              height={20}
+            />
+
             <p>{link.name}</p>
           </Link>
         );
