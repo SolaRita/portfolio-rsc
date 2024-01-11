@@ -15,18 +15,20 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es">
-        <body className={`${robotoMono.className} antialiased flex flex-col min-h-screen`}>
-        <div className="p-20 flex flex-1">
-          <div className="w-1/5">
-          <Sidenav/>
+      <body
+        className={`${robotoMono.className} antialiased flex flex-col min-h-screen`}
+      >
+        <div className="px-20 pt-10">
+          <div className="flex flex-1 gap-10">
+            <div className="w-1/5">
+              <Sidenav />
+            </div>
+            <div className="flex-1">{children}</div>
           </div>
-          <div className="flex-1 p-4">
-            {children}
-          </div>
+          <footer className="flex justify-center items-center p-2">
+            <p>Hecho con ♥️ por mi misma</p>
+          </footer>
         </div>
-        <footer className='flex justify-center items-center p-4'>
-          <p>Hecho con ♥️ por mi misma</p>
-        </footer>
       </body>
     </html>
   );

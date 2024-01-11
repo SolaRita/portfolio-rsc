@@ -5,12 +5,12 @@ import Image from "next/image";
 
 const links = [
   {
-    name: "About",
+    name: "Sobre mi",
     href: "/",
     icon: "face",
   },
   {
-    name: "Formacion",
+    name: "Formación",
     href: "/studies",
     icon: "book",
   },
