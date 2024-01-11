@@ -19,7 +19,7 @@ export default function RootLayout({
         className={`${robotoMono.className} antialiased flex flex-col min-h-screen`}
       >
         <div className="px-20 pt-10">
-          <div className="flex flex-1 gap-10">
+          <div className="flex flex-1 gap-24">
             <div className="w-1/5">
               <Sidenav />
             </div>

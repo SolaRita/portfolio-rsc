@@ -57,7 +57,7 @@ const jobs = [
       "Participación en todo el proceso de producción de las piezas audiovisuales para los museos: ‘Museo de la Sal’ en Gerri de la Sal, ‘Museo del Gas’ en Sabadell , ‘La Capella del Carme’ para el Museo de la Pesca de Palamós, ‘Museu de la Xocolata’ para Turrones Agramunt, ‘Centre Cultural sel Born’ en Barcelona, ‘Ford Malborougth’ en Menorca, y ‘Recinto Modernista de Sant Pau’ en Barcelona.",
       "Montaje de los vídeos de la App ‘Terrassa Aumentada’ para Mnactec en Terrassa.",
       "Diseño gráfico de los interactivos de ‘El Museo de las Culturas’ en BCN.",
-      "Ayudante de producción del corto ‘Roda de Mirades’ premiado en el festival de ‘Matatena’ de México",
+      "Ayudante de producción del corto ‘Roda de Mirades’ premiado en el festival de ‘Matatena’ de México.",
     ],
     href: "",
   },
@@ -84,12 +84,16 @@ const jobs = [
 export default function OtherJobs() {
   return (
     <div className="">
-      <h1 className="text-2xl pt-10 pb-7">{section.title}</h1>
-      <p className="text-sm columns-1 pb-7 gap-10 md:columns-2">{section.description}</p>
+      <h1 className="text-2xl pt-10 pb-7 text-red-800">{section.title}</h1>
+      <p className="text-sm columns-1 pb-9 gap-10 md:columns-2">
+        {section.description}
+      </p>
       <h2 className="text-sm font-semibold pb-4">{section.subtitle}:</h2>
-      {jobs.map((job) => {
-        return <CardJob key={job.name} {...job} />;
-      })}
+      <div className="flex flex-col gap-5">
+        {jobs.map((job) => {
+          return <CardJob key={job.name} {...job} />;
+        })}
+      </div>
     </div>
   );
 }
