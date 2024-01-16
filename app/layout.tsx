@@ -1,12 +1,16 @@
+import React, { useState } from "react";
 import type { Metadata } from "next";
-import { inter, robotoMono } from "./ui/fonts";
+import { inter, robotoMono, manrope } from "./ui/fonts";
 import "./globals.css";
-import Sidenav from "./ui/navbar/sidenav";
+import Sidebar from "./ui/sidebar/sidebar";
+import Navbar from "./ui/navbar/navbar";
 
 export const metadata: Metadata = {
   title: "Rita Solà",
   description: "Portfolio de Rita Solà Canals",
 };
+
+const footerMessage = "Hecho con ♥️ por mi misma";
 
 export default function RootLayout({
   children,
@@ -16,18 +20,21 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body
-        className={`${robotoMono.className} antialiased flex flex-col min-h-screen`}
+        className={`${manrope.className} antialiased flex flex-col min-h-screen`}
       >
-        <div className="px-20 pt-10">
-          <div className="flex flex-1 gap-24">
-            <div className="w-1/5">
-              <Sidenav />
-            </div>
-            <div className="flex-1">{children}</div>
+        <Navbar />
+        <div className="px-10 max-w-7xl md:px-20 self-center w-full">
+          <div className="flex gap-20 ">
+            <aside className="hidden md:flex w-1/5 pt-10 sticky top-0 h-screen">
+              <Sidebar />
+            </aside>
+            <main className="flex flex-col w-4/5 flex-grow">
+              <div className="md:pt-10">{children}</div>
+              <footer className="flex justify-center items-center p-6">
+                <p>{footerMessage}</p>
+              </footer>
+            </main>
           </div>
-          <footer className="flex justify-center items-center p-2">
-            <p>Hecho con ♥️ por mi misma</p>
-          </footer>
         </div>
       </body>
     </html>
