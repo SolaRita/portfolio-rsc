@@ -1,12 +1,14 @@
 "use client";
+import Link from "next/link";
 import { useState } from "react";
+import Image from "next/image";
 
 interface Job {
   name: string;
   description?: string[];
   charge: string;
   period: string;
-  href?: string;
+  href?: any;
 }
 
 export default function CardJob(job: Job) {
@@ -16,6 +18,7 @@ export default function CardJob(job: Job) {
   const handleToggle = () => {
     setIsOpen(!isOpen);
   };
+  const isLinkAvailable = href && href.length > 0;
 
   return (
     <details
@@ -42,6 +45,19 @@ export default function CardJob(job: Job) {
           </li>
         ))}
       </ul>
+      {isLinkAvailable && (
+        <div className="grid justify-items-end">
+          <Link key={name} href={href} target="_blank">
+            <Image
+              src={`/icons/open.svg`}
+              alt={name}
+              width={45}
+              height={45}
+              className={"md:w-5"}
+            />
+          </Link>
+        </div>
+      )}
     </details>
   );
 }

@@ -19,7 +19,7 @@ const jobs = [
       "Coordinadora y organizadora de las pruebas oficiales de catalán de la Dirección General de Política Lingüística en Barcelona y otras localidades catalanas.",
       "Apoyo en la coordinación y producción de los actos de graduación de la Universidad Abierta de Cataluña (UOC) en Barcelona y Madrid con especial focalización en la gestión de los recursos humanos.",
     ],
-    href: "",
+    href: "https://magmacultura.com/",
   },
   {
     name: "Mediapro",
@@ -29,7 +29,7 @@ const jobs = [
       "Para los documentales ‘El judici’, ‘Causa Especial 20907’, ‘20S’, ‘ Ferran Latorre, Més enllà dels 8.000’ retransmitidos en TV3.",
       "‘Cruce Talks’, ‘Cruce Afterparty’ y el documental de 10 años del festival Cruïlla con Manuel Huerga.",
     ],
-    href: "",
+    href: "https://www.mediapro.tv/es/",
   },
   {
     name: "AFANOC",
@@ -40,7 +40,7 @@ const jobs = [
       "Edición de los contenidos de las tres páginas web y la tienda online.",
       "Creación de los contenidos y gestión de las cuentas de Instagram de la entidad.",
     ],
-    href: "",
+    href: "https://afanoc.org/es/",
   },
   {
     name: "AVALON",
@@ -61,7 +61,7 @@ const jobs = [
       "Diseño gráfico de los interactivos de ‘El Museo de las Culturas’ en BCN.",
       "Ayudante de producción del corto ‘Roda de Mirades’ premiado en el festival de ‘Matatena’ de México.",
     ],
-    href: "",
+    href: "https://lacofradiadegracia.com/casita/?lang=es",
   },
   {
     name: "SONO",
@@ -70,7 +70,7 @@ const jobs = [
     description: [
       "Realización de los audiovisuales para la ‘Expo de Shanghai 2010’.",
     ],
-    href: "",
+    href: "https://www.sono.es/",
   },
   {
     name: "Lunatus",
