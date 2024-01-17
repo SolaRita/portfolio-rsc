@@ -52,7 +52,7 @@ export default function NavLinks({ setMenu }: any) {
                   alt={link.name}
                   width={45}
                   height={45}
-                  className="md:w-5"
+                  className="md:w-5 color-primary"
                 />
                 <p className={"md:text-sm text-2xl"}>{link.name}</p>
               </Link>

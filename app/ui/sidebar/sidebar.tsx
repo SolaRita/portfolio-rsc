@@ -28,7 +28,9 @@ export default function Sidenav({ setMenu }: any) {
           />
         </div>
         <div className="flex justify-center items-center flex-col pt-6 pb-2">
-          <h1 className="md:text-4xl text-4xl">Rita Solà</h1>
+          <h1 className="md:text-4xl text-3xl text-accent font-bold">
+            Rita Solà
+          </h1>
           <h2 className="md:text-base text-2xl">FrontEnd developer</h2>
         </div>
         <div className="flex justify-center md:gap-6 gap-8 md:pb-14 pb-3 md:items-end">
