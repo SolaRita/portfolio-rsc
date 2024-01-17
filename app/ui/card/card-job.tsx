@@ -7,18 +7,18 @@ interface Job {
 }
 
 export default function CardJob(job: Job) {
-  const descriptions = job.description;
+  const { name, charge, period, description } = job;
   return (
-    <div className="block max-w p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-      <h1 className="text-lg text-red-500">{job.name}</h1>
-      <div className="flex justify-between pb-10">
-        <h2 className="text-sm font-semibold">{job.charge}</h2>
-        <p className="text-sm">{job.period}</p>
+    <div className="block max-w p-6 bg-background-200 border border-background-300 rounded-lg shadow hover:bg-background-300">
+      <h1 className="md:text-lg text-2xl text-primary">{name}</h1>
+      <div className="flex flex-col md:justify-between pb-10">
+        <h2 className="md:text-sm text-lg font-semibold">{charge}</h2>
+        <p className="md:text-sm text-lg">{period}</p>
       </div>
       <ul>
-        {descriptions.map((description, i) => {
+        {description.map((description, i) => {
           return (
-            <li className="text-sm" key={i}>
+            <li className="md:text-sm text-lg" key={i}>
               {description}
             </li>
           );

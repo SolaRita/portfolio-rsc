@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body
-        className={`${manrope.className} antialiased flex flex-col min-h-screen`}
+        className={`${manrope.className} antialiased flex flex-col min-h-screen bg-background`}
       >
         <Navbar />
         <div className="px-10 max-w-7xl md:px-20 self-center w-full">

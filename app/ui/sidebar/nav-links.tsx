@@ -43,8 +43,8 @@ export default function NavLinks({ setMenu }: any) {
               <Link
                 key={link.name}
                 href={link.href}
-                className={`text-base flex items-center gap-2 font-medium hover:text-red-300 md:flex-none md:justify-start
-            ${pathname === link.href ? " text-red-600" : ""}`}
+                className={`text-base flex items-center gap-2 font-medium hover:text-primary-soft md:flex-none md:justify-start
+            ${pathname === link.href ? "text-primary" : ""}`}
                 onClick={closeMenu}
               >
                 <Image
