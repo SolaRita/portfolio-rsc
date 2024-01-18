@@ -26,18 +26,18 @@ export default function CardJob(job: Job) {
       name="description"
       className="block max-w p-6 bg-background-200 border border-background-300 rounded-lg shadow hover:bg-background-300"
     >
-      <summary
-        onClick={handleToggle}
-        className="flex flex-col md:justify-between cursor-pointer"
-      >
+      <summary onClick={handleToggle} className="flex flex-col cursor-pointer">
         <h1 className="md:text-lg text-2xl text-primary font-semibold">
           {name}
         </h1>
-        <h2 className="md:text-sm text-lg font-semibold">{charge}</h2>
+        <div className="flex flex-col md:flex-row md:justify-between pb-4">
+          <h2 className="md:text-sm text-lg font-semibold mb-2 md:mb-0">
+            {charge}
+          </h2>
+          <p className="md:text-sm text-lg">{period}</p>
+        </div>
       </summary>
-      <div className="flex flex-col md:justify-between pb-4">
-        <p className="md:text-sm text-lg">{period}</p>
-      </div>
+
       <ul className="ml-4">
         {description?.map((desc: string, i: number) => (
           <li className="md:text-sm text-lg list-disc mb-2" key={i}>
