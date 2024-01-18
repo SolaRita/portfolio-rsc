@@ -40,7 +40,7 @@ export default function CardJob(job: Job) {
       </div>
       <ul className="ml-4">
         {description?.map((desc: string, i: number) => (
-          <li className="md:text-sm text-lg list-disc" key={i}>
+          <li className="md:text-sm text-lg list-disc mb-2" key={i}>
             {desc}
           </li>
         ))}

@@ -12,15 +12,16 @@ module.exports = {
     extend: {
       colors: {
         primary: {
-          DEFAULT: "#4c5187",
-          soft: "#abacea",
+          DEFAULT: "#27187E",
+          soft: "#758BFD",
+          dark: "",
         },
         background: {
-          DEFAULT: "#fffefb",
-          200: "#f5f4f1",
-          300: "#E7E7E7",
+          DEFAULT: "##F1F2F6",
+          200: "#E6E8EF",
+          300: "#DADDE7",
         },
-        accent: "#F18F01",
+        accent: "#FF8600",
         text: "#333333",
       },
     },

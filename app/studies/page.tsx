@@ -6,7 +6,7 @@ const section = {
 
 const jobs = [
   {
-    name: "Factoria F5",
+    name: "Factoría F5",
     charge: "Bootcamp Full Stack Developer (850h)",
     period: "Octubre 2021 - Abril 2022",
     description: [""],
