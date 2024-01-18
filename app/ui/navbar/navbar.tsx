@@ -11,7 +11,7 @@ export default function Navbar() {
   };
 
   return (
-    <div className="md:hidden sticky top-0">
+    <header className="md:hidden sticky top-0">
       <nav
         className={`flex justify-end pt-4 pr-8 ${
           isOpen ? "bg-background" : ""
@@ -28,6 +28,6 @@ export default function Navbar() {
       >
         <Sidebar closeMenu={closeMenu} />
       </nav>
-    </div>
+    </header>
   );
 }

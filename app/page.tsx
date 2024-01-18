@@ -11,8 +11,8 @@ const section = {
 };
 export default function Home() {
   return (
-    <div className="pt-6">
+    <main>
       <SectionHeader {...section} />
-    </div>
+    </main>
   );
 }

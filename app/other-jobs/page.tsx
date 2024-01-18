@@ -85,13 +85,13 @@ const jobs = [
 
 export default function OtherJobs() {
   return (
-    <div className="">
+    <main>
       <SectionHeader {...section} />
       <div className="flex flex-col gap-5">
         {jobs.map((job) => {
           return <CardJob key={job.name} {...job} />;
         })}
       </div>
-    </div>
+    </main>
   );
 }

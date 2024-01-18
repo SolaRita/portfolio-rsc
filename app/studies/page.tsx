@@ -29,13 +29,13 @@ const jobs = [
 ];
 export default function Studies() {
   return (
-    <>
+    <main>
       <SectionHeader {...section} />
       <div className="flex flex-col gap-5">
         {jobs.map((job) => {
           return <CardJob key={job.name} {...job} />;
         })}
       </div>
-    </>
+    </main>
   );
 }
