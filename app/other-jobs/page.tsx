@@ -17,7 +17,7 @@ const jobs = [
       "Soporte de logística y compras a los servicios culturales.",
       "Coordinadora y organizadora de las pruebas oficiales de catalán del Institut Ramon Llull en Madrid, Zaragoza y otras localidades del estado español.",
       "Coordinadora y organizadora de las pruebas oficiales de catalán de la Dirección General de Política Lingüística en Barcelona y otras localidades catalanas.",
-      "Apoyo en la coordinación y producción de los actos de graduación de la Universidad Abierta de Cataluña (UOC) en Barcelona y Madrid con especial focalización en la gestión de los recursos humanos.",
+      "Apoyo en la coordinación y producción de los actos de graduación de la Universidad Abierta de Cataluña (UOC) en Barcelona y Madrid con especial foco en la gestión de los recursos humanos.",
     ],
     href: "https://magmacultura.com/",
   },
