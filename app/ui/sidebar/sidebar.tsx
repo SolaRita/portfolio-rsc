@@ -17,7 +17,7 @@ const icons = [
 export default function Sidenav({ closeMenu }: any) {
   return (
     <>
-      <div className="flex flex-col pb-4">
+      <aside className="flex flex-col pb-4">
         <div className="flex items-center justify-center">
           <Image
             src="/images/rita_sola.jpeg"
@@ -28,9 +28,11 @@ export default function Sidenav({ closeMenu }: any) {
           />
         </div>
         <div className="flex justify-center items-center flex-col pt-6 pb-2">
-          <h1 className="md:text-4xl text-3xl text-accent font-bold">
-            Rita Solà
-          </h1>
+          <title>
+            <h1 className="md:text-4xl text-3xl text-accent font-bold">
+              Rita Solà
+            </h1>
+          </title>
           <h2 className="md:text-base text-2xl">FrontEnd developer</h2>
         </div>
         <div className="flex justify-center md:gap-6 gap-8 md:pb-14 pb-3 md:items-end">
@@ -51,7 +53,7 @@ export default function Sidenav({ closeMenu }: any) {
         <div className="content-center">
           <NavLinks closeMenu={closeMenu} />
         </div>
-      </div>
+      </aside>
     </>
   );
 }
