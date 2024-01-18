@@ -14,7 +14,7 @@ const icons = [
     icon: "mail",
   },
 ];
-export default function Sidenav({ setMenu }: any) {
+export default function Sidenav({ closeMenu }: any) {
   return (
     <>
       <div className="flex flex-col pb-4">
@@ -49,7 +49,7 @@ export default function Sidenav({ setMenu }: any) {
           })}
         </div>
         <div className="content-center">
-          <NavLinks setMenu={setMenu} />
+          <NavLinks closeMenu={closeMenu} />
         </div>
       </div>
     </>

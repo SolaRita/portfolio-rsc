@@ -4,8 +4,11 @@ import Sidebar from "../sidebar/sidebar";
 import React, { useState } from "react";
 
 export default function Navbar() {
-  const [isOpen, setMenu] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
   const icon = isOpen ? "close" : "menu";
+  const closeMenu = () => {
+    setIsOpen(false);
+  };
 
   return (
     <div className="md:hidden sticky top-0">
@@ -13,9 +16,8 @@ export default function Navbar() {
         className={`flex justify-end pt-4 pr-8 ${
           isOpen ? "bg-background" : ""
         }`}
-        // className={`flex justify-end pt-4 pr-8  w-full h-16 bg-gradient-to-b from-background via-transparent to-transparent transition-all duration-500 `}
       >
-        <button onClick={() => setMenu(!isOpen)}>
+        <button onClick={() => setIsOpen(!isOpen)}>
           <Image src={`icons/${icon}.svg`} alt="menu" width={45} height={45} />
         </button>
       </nav>
@@ -24,7 +26,7 @@ export default function Navbar() {
           !isOpen ? "hidden" : ""
         }`}
       >
-        <Sidebar onClick={() => setMenu(false)} />
+        <Sidebar closeMenu={closeMenu} />
       </nav>
     </div>
   );

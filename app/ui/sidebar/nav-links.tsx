@@ -27,11 +27,11 @@ const links = [
   },
 ];
 
-export default function NavLinks({ setMenu }: any) {
+export default function NavLinks({ closeMenu }: any) {
   const pathname = usePathname();
-  const closeMenu = () => {
+  const haveToClose = () => {
     if (window.innerWidth <= 768) {
-      setMenu(true);
+      closeMenu(false);
     }
   };
   return (
@@ -45,7 +45,7 @@ export default function NavLinks({ setMenu }: any) {
                 href={link.href}
                 className={`text-base flex items-center gap-2 font-medium hover:text-primary-soft md:flex-none md:justify-start
             ${pathname === link.href ? "text-primary" : ""}`}
-                onClick={closeMenu}
+                onClick={haveToClose}
               >
                 <Image
                   src={`/icons/${link.icon}.svg`}

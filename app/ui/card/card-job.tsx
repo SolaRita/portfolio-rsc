@@ -53,7 +53,7 @@ export default function CardJob(job: Job) {
               alt={name}
               width={45}
               height={45}
-              className={"md:w-5"}
+              className="w-7"
             />
           </Link>
         </div>
