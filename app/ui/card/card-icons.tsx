@@ -7,7 +7,7 @@ export default function CardIcons({ title, icons }: any) {
         {title}
       </h3>
       <div>
-        <ul className="flex justify-center gap-9">
+        <ul className="flex justify-center gap-9 flex-wrap md:flex-nowrap">
           {icons.map((icon: any, index: number) => (
             <li key={index}>
               <Image
