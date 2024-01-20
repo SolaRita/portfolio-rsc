@@ -48,3 +48,11 @@ body {
 .circleCrop {
   clip-path: circle(50% at 50% 50%);
 }
+
+.grayscale-filter {
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+.grayscale-filter:hover {
+  filter: grayscale(0%);
+}
