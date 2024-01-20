@@ -4,13 +4,12 @@ import { inter, robotoMono, manrope } from "./ui/fonts";
 import "./globals.css";
 import Sidebar from "./ui/sidebar/sidebar";
 import Navbar from "./ui/navbar/navbar";
+import Footer from "./ui/footer/footer";
 
 export const metadata: Metadata = {
   title: "Rita Solà",
   description: "Portfolio de Rita Solà Canals",
 };
-
-const footerMessage = "Hecho con ♥️ por mi misma";
 
 export default function RootLayout({
   children,
@@ -20,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body
-        className={`${manrope.className} antialiased flex flex-col min-h-screen bg-background`}
+        className={`${manrope.className} antialiased flex flex-col min-h-screen bg-back`}
       >
         <Navbar />
         <div className="px-10 max-w-7xl md:px-20 self-center w-full">
@@ -30,9 +29,7 @@ export default function RootLayout({
             </aside>
             <main className="flex flex-col w-4/5 flex-grow">
               <div className="md:pt-10">{children}</div>
-              <footer className="flex justify-center items-center p-6">
-                <p>{footerMessage}</p>
-              </footer>
+              <Footer />
             </main>
           </div>
         </div>
