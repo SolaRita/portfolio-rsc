@@ -4,11 +4,9 @@ import SectionHeader from "./ui/section/section-header";
 const section = {
   title: "Sobre mi",
   description: [
-    "Después de dedicar algunos años a la industria audiovisual y de eventos, decidí redirigir mi carrera hacia el apasionante mundo del desarrollo. Mi experiencia previa me ha proporcionado habilidades esenciales, como la valoración del trabajo en equipo, la gestión eficiente del tiempo, la capacidad de priorizar tareas y la adaptabilidad a los cambios.",
-    "Con determinación, he explorado diversas oportunidades en el ámbito del desarrollo, consolidando mi interés y compromiso con la especialización como desarrolladora FrontEnd. Mi enfoque actual se centra en la librería React, donde estoy llevando a cabo proyectos independientes para profundizar en mis habilidades.",
-    "Mi búsqueda va más allá de la funcionalidad; me apasiona la estética y la importancia de la accesibilidad en los proyectos. A pesar de mi relativa corta experiencia, me considero una profesional comprometida y seria, con un firme deseo de aprendizaje continuo en este dinámico sector.",
-    "Estoy entusiasmada por contribuir con mi creatividad y habilidades técnicas en entornos que valoren tanto la excelencia técnica como la experiencia del usuario. Mi objetivo es seguir creciendo y aportando en el fascinante mundo del desarrollo FrontEnd.",
+    "Hola, soy Rita, una desarrolladora web de Barcelona. Me encanta explorar formas innovadoras de optimizar procesos y encontrar caminos más eficientes. Dedico especial atención a la estética y accesibilidad de las interfaces. Apasionada por aprender y colaborar en equipo, cada proyecto es una oportunidad para crecer y mejorar juntos.",
   ],
+  subtitle: "Mi Stack Tecnológico:",
 };
 
 const stackIcons = [
@@ -113,7 +111,7 @@ const stackIcons = [
         icon: "vscode",
       },
       {
-        name: "Web Storm from Jet Brains",
+        name: "Web Storm",
         icon: "webstorm",
       },
     ],
@@ -166,10 +164,23 @@ const stackIcons = [
 ];
 
 export default function Home() {
-  console.log("stackIcons", stackIcons);
   return (
     <main>
-      <SectionHeader {...section} />
+      <h1 className="mb:text-4xl text-3xl pt-10 pb-7 text-primary font-semibold">
+        {section.title}
+      </h1>
+      <div className="columns-1 pb-9 gap-10">
+        {section.description?.map((description, i) => {
+          return (
+            <p key={i} className="md:text-sm text-lg mb-2">
+              {description}
+            </p>
+          );
+        })}
+      </div>
+      <h2 className="md:text-sm text-lg font-semibold pb-4">
+        {section.subtitle}
+      </h2>
       <div className="flex gap-5 flex-wrap">
         {stackIcons.map((stack: any, index: number) => (
           <CardIcons key={index} title={stack.title} icons={stack.icons} />

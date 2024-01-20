@@ -1,11 +1,9 @@
 import Image from "next/image";
 
 export default function CardIcons({ title, icons }: any) {
-  //   console.log(stack);
-  //   const [title, icons] = stack;
   return (
     <article className="max-w grow p-5  bg-background-200 border border-background-300 rounded-lg shadow">
-      <h3 className="justify-center md:text-lg text-2xl text-primary font-semibold pb-6">
+      <h3 className="md:text-lg text-2xl text-primary font-semibold pb-6">
         {title}
       </h3>
       <div>
@@ -15,8 +13,8 @@ export default function CardIcons({ title, icons }: any) {
               <Image
                 src={`icons/${icon.icon}.svg`}
                 alt={icon.name}
-                width={30}
-                height={30}
+                width={31}
+                height={31}
                 className="grayscale-filter"
                 title={icon.name}
               ></Image>
