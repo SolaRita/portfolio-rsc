@@ -19,7 +19,7 @@ const stackIcons = [
       },
       {
         name: "TypeScript",
-        icon: "typeScript",
+        icon: "typescript",
       },
       {
         name: "HTML5",
