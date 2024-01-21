@@ -7,14 +7,14 @@ export default function CardIcons({ title, icons }: any) {
         {title}
       </h3>
       <div>
-        <ul className="flex justify-center gap-9 flex-wrap md:flex-nowrap">
+        <ul className="flex justify-center gap-8">
           {icons.map((icon: any, index: number) => (
             <li key={index}>
               <Image
                 src={`icons/${icon.icon}.svg`}
                 alt={icon.name}
-                width={31}
-                height={31}
+                width={30}
+                height={30}
                 className="grayscale-filter"
                 title={icon.name}
               ></Image>

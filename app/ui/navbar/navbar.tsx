@@ -13,7 +13,7 @@ export default function Navbar() {
   return (
     <header className="md:hidden sticky top-0">
       <nav
-        className={`flex justify-end pt-4 pr-8 ${
+        className={`flex justify-end pt-4 pr-8  z-0 ${
           isOpen ? "bg-background" : ""
         }`}
       >
@@ -22,7 +22,7 @@ export default function Navbar() {
         </button>
       </nav>
       <nav
-        className={`px-8  bg-background absolute h-screen w-screen ${
+        className={`px-8  bg-background absolute z-50 h-screen w-screen ${
           !isOpen ? "hidden" : ""
         }`}
       >
