@@ -25,6 +25,10 @@ body {
   margin: 0;
 }
 
+p li h1 h2 {
+  color: #333333;
+}
+
 .layout {
   display: flex;
   flex: 1;
