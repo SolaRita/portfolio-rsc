@@ -35,16 +35,16 @@ export default function CardJob(job: Job) {
             {name}
           </h1>
           <div className="flex flex-col md:flex-row md:justify-between pb-4">
-            <h2 className="md:text-sm text-lg font-semibold mb-2 md:mb-0">
+            <h2 className="md:text-sm text-lg text-body font-semibold mb-2 md:mb-0">
               {charge}
             </h2>
-            <p className="md:text-sm text-lg">{period}</p>
+            <p className="md:text-sm text-lg text-body">{period}</p>
           </div>
         </summary>
 
         <ul className="ml-4">
           {description?.map((desc: string, i: number) => (
-            <li className="md:text-sm text-lg list-disc mb-2" key={i}>
+            <li className="md:text-sm text-lg list-disc mb-2 text-body" key={i}>
               {desc}
             </li>
           ))}

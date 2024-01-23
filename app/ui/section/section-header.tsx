@@ -16,7 +16,7 @@ export default function SectionHeader(section: Section) {
         <div className="columns-1 pb-9 gap-10 md:columns-2">
           {description?.map((description, i) => {
             return (
-              <p key={i} className="md:text-sm text-lg mb-2">
+              <p key={i} className="md:text-sm text-lg mb-2 text-body">
                 {description}
               </p>
             );
@@ -24,7 +24,9 @@ export default function SectionHeader(section: Section) {
         </div>
       )}
       {isSubtitleAvailable && (
-        <h2 className="md:text-sm text-lg font-semibold pb-4">{subtitle}</h2>
+        <h2 className="md:text-sm text-lg font-semibold pb-4 text-body">
+          {subtitle}
+        </h2>
       )}
     </div>
   );

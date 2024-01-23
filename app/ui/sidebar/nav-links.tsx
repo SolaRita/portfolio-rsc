@@ -43,7 +43,7 @@ export default function NavLinks({ closeMenu }: any) {
               <Link
                 key={link.name}
                 href={link.href}
-                className={`text-base flex items-center gap-2 font-medium hover:text-primary-soft md:flex-none md:justify-start
+                className={`text-base text-body flex items-center gap-2 font-medium hover:text-primary-soft md:flex-none md:justify-start
             ${pathname === link.href ? "text-primary" : ""}`}
                 onClick={haveToClose}
               >

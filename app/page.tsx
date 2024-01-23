@@ -172,13 +172,13 @@ export default function Home() {
       <div className="columns-1 pb-9 gap-10">
         {section.description?.map((description, i) => {
           return (
-            <p key={i} className="md:text-sm text-lg mb-2">
+            <p key={i} className="md:text-sm text-lg mb-2 text-body">
               {description}
             </p>
           );
         })}
       </div>
-      <h2 className="md:text-sm text-lg font-semibold pb-4">
+      <h2 className="md:text-sm text-lg font-semibold pb-4 text-body">
         {section.subtitle}
       </h2>
       <div className="flex gap-5 flex-wrap">
