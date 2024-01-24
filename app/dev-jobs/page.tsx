@@ -14,7 +14,7 @@ const jobs = [
   {
     name: "Apartool",
     charge: "FrontEnd developer",
-    period: "Noviembre 2022 - Diciembre 2023",
+    period: "Noviembre 2022 - actualidad",
     description: [
       "Desarrollo de la plataforma interna con Angular 14.",
       " Frameworks: Angular Material y Tailwind.",
