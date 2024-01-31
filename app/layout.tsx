@@ -7,8 +7,8 @@ import Navbar from "./ui/navbar/navbar";
 import Footer from "./ui/footer/footer";
 
 export const metadata: Metadata = {
-  title: "Rita Solà",
-  description: "Portfolio de Rita Solà Canals",
+  title: "Portfolio  ",
+  description: "Rita Solà Canals | Frontend developer",
 };
 
 export default function RootLayout({
