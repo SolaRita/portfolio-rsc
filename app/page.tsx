@@ -39,7 +39,7 @@ const stackIcons = [
     title: "Frameworks y librerías de JS",
     icons: [
       {
-        name: "Angular.JS",
+        name: "Angular",
         icon: "angular",
       },
       {
