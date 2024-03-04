@@ -1,3 +1,4 @@
+import { Icon } from "./interfaces/Icon";
 import CardIcons from "./ui/card/card-icons";
 import SectionHeader from "./ui/section/section-header";
 
@@ -163,6 +164,11 @@ const stackIcons = [
   },
 ];
 
+interface Stack {
+  title: string;
+  icons: Icon[];
+}
+
 export default function Home() {
   return (
     <main>
@@ -182,7 +188,7 @@ export default function Home() {
         {section.subtitle}
       </h2>
       <div className="flex gap-5 flex-wrap">
-        {stackIcons.map((stack: any, index: number) => (
+        {stackIcons.map((stack: Stack, index: number) => (
           <CardIcons key={index} title={stack.title} icons={stack.icons} />
         ))}
       </div>

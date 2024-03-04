@@ -8,7 +8,7 @@ interface Job {
   description?: string[];
   charge: string;
   period: string;
-  href?: any;
+  href?: string;
 }
 
 export default function CardJob(job: Job) {

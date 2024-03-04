@@ -14,6 +14,7 @@ const icons = [
     icon: "mail",
   },
 ];
+
 export default function Sidenav({ closeMenu }: any) {
   return (
     <>

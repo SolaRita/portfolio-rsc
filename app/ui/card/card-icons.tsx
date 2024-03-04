@@ -1,6 +1,12 @@
 import Image from "next/image";
+import { Icon } from "../../interfaces/Icon";
 
-export default function CardIcons({ title, icons }: any) {
+interface CardIcon {
+  title: string;
+  icons: Icon[];
+}
+
+export default function CardIcons({ title, icons }: CardIcon) {
   return (
     <article className="max-w grow p-5  bg-background-200 border border-background-300 rounded-lg shadow">
       <h3 className="md:text-lg text-2xl text-primary font-semibold pb-6">
@@ -8,7 +14,7 @@ export default function CardIcons({ title, icons }: any) {
       </h3>
       <div>
         <ul className="flex justify-center gap-8 flex-wrap">
-          {icons.map((icon: any, index: number) => (
+          {icons.map((icon: Icon, index: number) => (
             <li key={index} className="flex flex-col items-center text-center">
               <Image
                 src={`icons/${icon.icon}.svg`}
