@@ -31,7 +31,7 @@ export default function CardJob(job: Job) {
         className="flex flex-col cursor-pointer w-full"
       >
         <div className="flex justify-between pb-4 w-full">
-          <h1 className="md:text-lg text-2xl text-primary font-semibold">
+          <h1 className="md:text-lg text-2xl text-primary font-semibold text-left">
             {name}
           </h1>
           <svg
@@ -61,10 +61,10 @@ export default function CardJob(job: Job) {
           </svg>
         </div>
         <div className="flex flex-col md:flex-row md:justify-between items-start pb-4 w-full">
-          <h2 className="md:text-sm text-lg text-body font-semibold mb-2 md:mb-0">
+          <h2 className="md:text-sm text-lg text-body font-semibold mb-2 md:mb-0 text-left">
             {charge}
           </h2>
-          <p className="md:text-sm text-lg text-body">{period}</p>
+          <p className="md:text-sm text-lg text-body text-left">{period}</p>
         </div>
       </button>
       <div
